@@ -275,8 +275,8 @@ export default function Hero() {
 
       draw(ctx: CanvasRenderingContext2D) {
         const centerX = this.canvasRef.width / 2;
-        const centerY = this.canvasRef.height * 0.25;
-        const fontSize = Math.min(this.canvasRef.width * 0.15, 120);
+        const centerY = Math.min(this.canvasRef.height * 0.15, 80);
+        const fontSize = Math.min(this.canvasRef.width * 0.12, 100);
 
         ctx.font = `300 ${fontSize}px 'Poppins', sans-serif`;
         ctx.textAlign = "center";
@@ -452,7 +452,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/70 to-dark-900/30" />
 
-      <div className="relative z-10 container mx-auto px-4 pt-[30vh] pb-32">
+      <div className="relative z-10 container mx-auto px-4 pt-[45vh] pb-32">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
